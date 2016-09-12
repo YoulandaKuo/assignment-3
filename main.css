@@ -10,16 +10,17 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: #ffde00;
 }
 
 /***********************
 HEADER
 ***********************/
 .header {
-  background-color: #f2f2f2;
+  background-color: #ffde00;
   padding: 40px 40px;
   text-align: center;
+  border-bottom: 24px solid #ffcf00;
 }
 
 .header h1 {
@@ -53,15 +54,20 @@ CONTENT
   width: 20%;
   background: repeating-linear-gradient(
   45deg,
-  #999,
-  #999 1px,
+  #ffde00,
+  #ffde00 1px,
   #fff 1px,
   #fff 20px
 );
 }
 
+.side1 {
+  border-right: 1px solid #ffde00;
+}
+
 .side2 {
   order: 99;
+  border-left: 1px solid #ffde00;
 }
 
 .main {
@@ -70,14 +76,14 @@ CONTENT
   padding: 40px 80px;
 }
 
+#content-title {
+  margin-bottom: 40px;
+}
+
 #intro {
   display: flex;
   margin-bottom: 40px;
   align-items: center;
-}
-
-.main h2 {
-  margin-bottom: 40px;
 }
 
 #intro img {
@@ -137,7 +143,12 @@ th:nth-child(2n), td:nth-child(2n) {
 FOOTER
 ***********************/
 .footer {
-  background-color: #f2f2f2;
-  flex: 1 100%;
+  background-color: #ffde00;
+  flex: 1;
+  height: 100px;
+  border-top: 24px solid #ffcf00;
+}
+
+.footer span {
   height: 100px;
 }
